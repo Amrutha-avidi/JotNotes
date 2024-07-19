@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link type="text/css" rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+    <div class="login-main">
+        <div class="logo-con">
+            <svg class="w-6 h-6  text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24">
+                <path stroke="#e91e63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m4.988 19.012 5.41-5.41m2.366-6.424 4.058 4.058-2.03 5.41L5.3 20 4 18.701l3.355-9.494 5.41-2.029Zm4.626 4.625L12.197 6.61 14.807 4 20 9.194l-2.61 2.61Z" />
+            </svg>
+    
+            <h1 class="logo-head">JotNote</h1>
+        </div>
+        <div class="login-container">
+           
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Login</button>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+            </form>
+        </div> 
+
+    </div> 
+    <script src="script.js"></script>
+  
+</body>
+</html>
